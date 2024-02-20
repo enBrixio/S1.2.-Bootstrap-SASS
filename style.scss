@@ -1,0 +1,27 @@
+// Sobrescribe las variables de color
+$primary: #5265E1;
+$secondary: #FA5959;
+
+// Actualiza los colores temáticos de Bootstrap con tus propios valores
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary
+);
+.deco{
+  position: relative;
+}
+.deco::after {
+  content: "";
+  top: 0;
+  left: 10rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #5265E1;
+  border-radius: 10rem 0px 0px 10rem;
+  margin-top: 300rem;
+ 
+}
+
+// Importa el archivo principal de Bootstrap después de tus modificaciones
+@import "./node_modules/bootstrap/scss/bootstrap";
