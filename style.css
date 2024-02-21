@@ -15,6 +15,40 @@
   margin-top: 300rem;
 }
 
+.margenTop {
+  margin-top: 5rem;
+}
+
+#home-tab {
+  border: none;
+  color: rgb(23, 32, 42);
+}
+
+#home-tab:active, #home-tab:focus {
+  border-bottom: 0.3rem solid #FA5959;
+  font-weight: bold;
+}
+
+#profile-tab {
+  border: none;
+  color: rgb(23, 32, 42);
+}
+
+#profile-tab:active, #profile-tab:focus {
+  border-bottom: 0.3rem solid #FA5959;
+  font-weight: bold;
+}
+
+#contact-tab {
+  border: none;
+  color: rgb(23, 32, 42);
+}
+
+#contact-tab:active, #contact-tab:focus {
+  border-bottom: 0.3rem solid #FA5959;
+  font-weight: bold;
+}
+
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors

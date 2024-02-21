@@ -9,85 +9,237 @@
     <title>Bookmark</title>
   </head>
   <body>
-    <section class="container-fluid overflow-hidden">
+    <section class="container-fluid overflow-hidden justify-content-center">
+      <header class="container">
+        <div class="row py-5 justify-content-between align-items-center">
+          <div class="col-6">
+            <a class="navbar-brand" href="#">
+              <img src="/img/logo-bookmark.svg" alt="Logo" />
+            </a>
+          </div>
+          <div class="col-6">
+            <nav class="navbar navbar-expand-lg justify-content-end">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarS"
+                aria-controls="navbarS"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-  
-
-    <header class="container">
-      <div class="row py-5 justify-content-between align-items-center">
-        <div class=" col-sm-6 col-md-6">
-          <a class="navbar-brand" href="#">
-            <img src="/img/logo-bookmark.svg" alt="Logo" />
-          </a>
+              <div class="collapse navbar-collapse" id="navbarS">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item px-4 fw-semibold">
+                    <a class="nav-link" href="#">FEATURES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-4 fw-semibold" href="#">PRICING</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-4 fw-semibold" href="#">CONTACT</a>
+                  </li>
+                  <li class="nav-item">
+                    <button
+                      class="btn btn-secondary text-white px-4 fw-semibold"
+                    >
+                      LOGIN
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
         </div>
-        <div class=" col-sm-6 col-md-6">
-          <nav class="navbar navbar-expand-lg justify-content-end">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarS"
-              aria-controls="navbarS"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+      </header>
+
+      <main>
+        <!-- Sección Encabezado -->
+        <section class="container py-4">
+          <div class="row">
+            <div
+              class="col-12 col-lg-6 order-2 order-lg-1 text-center "
             >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarS">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item px-4 fw-semibold">
-                  <a class="nav-link" href="#">FEATURES</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link px-4 fw-semibold" href="#">PRICING</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link px-4 fw-semibold" href="#">CONTACT</a>     
-                </li>
-                <li class="nav-item">
-                  <button class="btn btn-secondary text-white px-4 fw-semibold">LOGIN</button>
-                </li>
-              </ul>
+              <h1 class="fw-bold py-5 mx-5">A Simple Bookmark Manager</h1>
+              <p class="text-muted  mx-5">
+                A clean and simple interface to organize your favorite websites.
+                Open a new browser tab and see your sites load instantlly. Try
+                it Free
+              </p>
+              <buttom class="ms-5 mt-5 btn btn-primary btn-lg shadow"
+                >Get it on Chrome</buttom
+              >
+              <buttom class="ms-3 mt-5 btn btn-gray-500 btn-lg shadow"
+                >Get it on Firefox</buttom
+              >
             </div>
-          </nav>
-        </div>
-      </div>
-    </header>
-
-    <main>
-        <div class="collapse" id="navbarS">
-            <div class="card card-body">
-              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            <div class="col-12 col-lg-6 order-lg-2 order-1 text-center deco">
+              <article class="d-flex deco">
+                <img
+                  class="img-fluid"
+                  src="/img/illustration-hero.svg"
+                  alt=""
+                />
+              </article>
             </div>
           </div>
-      <section class="container py-5">
-        <div class="row">
-          <div class="col-md-5 order-sm-2 order-md-1 text-sm-center text-md-start">
-            <h1 class="fw-bold py-5 mx-5">A Simple Bookmark Manager</h1>
-            <p class="text-muted mx-5">
-              A clean and simple interface to organize your favorite websites.
-              Open a new browser tab and see your sites load instantlly. Try it
-              Free
+        </section>
+
+        <!-- Seccion Features -->
+        <section class="container text-center">
+          <div class="row justify-content-center">
+            <h1 class="fw-bold py-3 mx-5">Features</h1>
+            <p class="col-12 col-md-8 col-lg-4">
+              Our aim is to quick and easy for you to acces your favorite
+              websites. Your Bookmarks sync between your devices so you can
+              acces them on the go
             </p>
-            <buttom class="ms-5 mt-5 btn btn-primary btn-lg shadow"
-              >Get it on Chrome</buttom
-            >
-            <buttom class="ms-3 mt-5 btn btn-gray-500 btn-lg shadow"
-              >Get it on Firefox</buttom
-            >
           </div>
-          <div class="col-md-7 order-md-2 order-sm-1 text-center deco">
-            <article class="d-flex deco">
-                <img class="img-fluid" src="/img/illustration-hero.svg" alt="" />
-            </article>
-            
-          </div>
-        </div>
-      </section>
+        </section>
 
-    </main>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</section>
+        <!-- Section TABS-->
+        <section class="container py-3">
+          <div class="row mx-auto">
+            <ul
+              class="mx-5 nav nav-tabs col-10 col-lg-12 justify-content-center"
+              id="myTab"
+              role="tablist"
+            >   
+              <li class="mx-auto nav-item col-12 col-lg-4 " role="presentation">
+                <button
+                  class="nav-link col-12"
+                  id="home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#home"
+                  type="button"
+                  role="tab"
+                  aria-controls="home"
+                  aria-selected="false"
+                >
+                  Simple BookMarking
+                </button>
+              </li>
+              <li class="mx-auto nav-item col-12 col-lg-4 " role="presentation">
+                <button
+                  class="nav-link col-12"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="false"
+                >
+                  Speedy Searching
+                </button>
+              </li>
+              <li class="mx-auto nav-item col-12 col-lg-4 " role="presentation">
+                <button
+                  class="nav-link col-12"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="contact"
+                  aria-selected="false"
+                >
+                  Easy Shearing
+                </button>
+              </li>
+            </ul>
+        
+
+            <div class="tab-content" id="myTabContent">
+            
+              <div
+                class="tab-pane fade show active"
+                id="home"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+              >
+              <div class="row ">
+                <div class="mx-auto py-auto col-8 col-lg-5 py-5 justify-content-center">
+                  <img
+                    src="/img/illustration-features-tab-1.svg"
+                    alt="BookMarking"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="mx-auto col-8 col-lg-5 py-auto text-center">
+                  <h1 class="text-lg-start margenTop">Bookmark in on click</h1>
+                  <p class="text-start  py-4 align-content-center">
+                    Organize your bookmarks however you like. Our simple
+                    drag-and-drop interface gives you complete control over how
+                    you manage your favorite sites
+                  </p>
+                  <button class="btn btn-primary justify-content-start d-none d-lg-block">More info</button>
+                </div>
+
+              </div>
+            </div>
+              <!--Speedy Searching-->
+              <div
+                class="tab-pane fade"
+                id="profile"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+              >
+              <div class="row justify-content-center">
+                <div class="mx-auto py-auto col-8 col-lg-5 py-5">
+                  <img
+                    src="/img/illustration-features-tab-2.svg"
+                    alt="BookMarking"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="mx-auto col-8 col-lg-5 py-auto text-center">
+                  <h1 class="text-lg-start text-center margenTop">Bookmark in on click</h1>
+                  <p class="text-start  py-4 align-content-center">
+                    Organize your bookmarks however you like. Our simple
+                    drag-and-drop interface gives you complete control over how
+                    you manage your favorite sites
+                  </p>
+                  <button class="btn btn-primary justify-content-start d-none d-lg-block">More info</button>
+                </div>
+
+              </div>
+              </div>
+              <!--Easy Sharing-->
+              <div
+                class="tab-pane fade"
+                id="contact"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+              >
+              <div class="row text-center">
+                <div class="mx-auto py-auto col-8 col-lg-5 py-5">
+                  <img
+                    src="/img/illustration-features-tab-3.svg"
+                    alt="BookMarking"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="mx-auto col-8 col-lg-5 py-auto text-center">
+                  <h1 class="text-lg-start text-center margenTop">Bookmark in on click</h1>
+                  <p class="text-start  py-4 align-content-center">
+                    Organize your bookmarks however you like. Our simple
+                    drag-and-drop interface gives you complete control over how
+                    you manage your favorite sites
+                  </p>
+                  <button class="btn btn-primary justify-content-start d-none d-lg-block">More info</button>
+                </div>
+
+              </div>
+              </div>
+            </div>
+          </>
+        </section>
+      </main>
+      <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    </section>
   </body>
 </html>
