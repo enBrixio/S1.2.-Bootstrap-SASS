@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/img/favicon-32x32.png" type="image/png" />
     <link rel="stylesheet" href="/style.css" />
-    <!--<script type="module" src="./main.js" defer></script>-->
+    script type="module" src="./main.js" defer></script>
     <title>Bookmark</title>
   </head>
   <body>
@@ -33,13 +33,13 @@
               <div class="collapse navbar-collapse" id="navbarS">
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item px-4 fw-semibold">
-                    <a class="nav-link" href="#">FEATURES</a>
+                    <a id="hoverA" class="nav-link" href="#">FEATURES</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link px-4 fw-semibold" href="#">PRICING</a>
+                    <a id="hoverA" class="nav-link px-4 fw-semibold" href="#">PRICING</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link px-4 fw-semibold" href="#">CONTACT</a>
+                    <a id="hoverA" class="nav-link px-4 fw-semibold" href="#">CONTACT</a>
                   </li>
                   <li class="nav-item">
                     <button
@@ -390,14 +390,16 @@
 
         <!-- Footer -->
 
-        <footer class="container-fluid bg-black text-white">
+        <footer class="container-fluid bg-black text-white" novalidate>
             <div class="row bg-primary text-center py-5">
                 <div class="col-12">
                     <h4 class="pb-3">35.000 ALREADY JOINED</h4>
                     <h1>Stay up-to-date with what we're doing</h1>
-                    <form class="row justify-content-center py-5">
+                    <form class="row justify-content-center py-5 needs-validation" novalidate>
                         <div class="col-md-6 col-10 d-flex align-items-center gap-2"> <!-- Ajustado para incluir espacio entre elementos -->
-                            <input type="email" class="form-control" style="flex-grow: 1;" id="exampleInputEmail1" placeholder="Introduce your mail..." aria-label="Email">
+                            <input type="email" class="form-control" style="flex-grow: 1;" id="exampleInputEmail1" required placeholder="Introduce your mail..." aria-label="Email">
+                            <div class="valid-feedback">Se ha enviado correctamente</div>
+                            <div class="invalid-feedback">Debes rellenar los datos correctos</div>
                             <button type="submit" class="btn btn-secondary text-white" style="flex-grow: 2; white-space: nowrap;">Contact Us</button> <!-- Botón ajustado para ocupar el espacio restante -->
                         </div>
                     </form>

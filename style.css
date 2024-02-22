@@ -1,4 +1,14 @@
 @charset "UTF-8";
+#hoverA:hover {
+  color: #FA5959;
+}
+
+#hover-bp:hover {
+  background-color: white;
+  border-color: #5265E1;
+  color: #5265E1;
+}
+
 .deco {
   position: relative;
 }
