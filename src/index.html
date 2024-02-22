@@ -9,8 +9,7 @@
     <title>Bookmark</title>
   </head>
   <body>
-    <section class="container-fluid overflow-hidden justify-content-center">
-      <header class="container">
+      <header class="container sticky-top bg-white">
         <div class="row py-5 justify-content-between align-items-center">
           <div class="col-6">
             <a class="navbar-brand" href="#">
@@ -18,7 +17,7 @@
             </a>
           </div>
           <div class="col-6">
-            <nav class="navbar navbar-expand-lg justify-content-end">
+            <nav class="navbar navbar-expand-lg justify-content-end ">
               <button
                 class="navbar-toggler"
                 type="button"
@@ -56,15 +55,13 @@
         </div>
       </header>
 
-      <main>
+      <main class="overflow-hidden">
         <!-- Sección Encabezado -->
         <section class="container py-4">
           <div class="row">
-            <div
-              class="col-12 col-lg-6 order-2 order-lg-1 text-center "
-            >
+            <div class="col-12 col-lg-6 order-2 order-lg-1 text-center">
               <h1 class="fw-bold py-5 mx-5">A Simple Bookmark Manager</h1>
-              <p class="text-muted  mx-5">
+              <p class="text-muted mx-5">
                 A clean and simple interface to organize your favorite websites.
                 Open a new browser tab and see your sites load instantlly. Try
                 it Free
@@ -107,8 +104,8 @@
               class="mx-5 nav nav-tabs col-10 col-lg-12 justify-content-center"
               id="myTab"
               role="tablist"
-            >   
-              <li class="mx-auto nav-item col-12 col-lg-4 " role="presentation">
+            >
+              <li class="mx-auto nav-item col-12 col-lg-4" role="presentation">
                 <button
                   class="nav-link col-12"
                   id="home-tab"
@@ -122,7 +119,7 @@
                   Simple BookMarking
                 </button>
               </li>
-              <li class="mx-auto nav-item col-12 col-lg-4 " role="presentation">
+              <li class="mx-auto nav-item col-12 col-lg-4" role="presentation">
                 <button
                   class="nav-link col-12"
                   id="profile-tab"
@@ -136,7 +133,7 @@
                   Speedy Searching
                 </button>
               </li>
-              <li class="mx-auto nav-item col-12 col-lg-4 " role="presentation">
+              <li class="mx-auto nav-item col-12 col-lg-4" role="presentation">
                 <button
                   class="nav-link col-12"
                   id="contact-tab"
@@ -151,36 +148,41 @@
                 </button>
               </li>
             </ul>
-        
 
             <div class="tab-content" id="myTabContent">
-            
               <div
                 class="tab-pane fade show active"
                 id="home"
                 role="tabpanel"
                 aria-labelledby="home-tab"
               >
-              <div class="row ">
-                <div class="mx-auto py-auto col-8 col-lg-5 py-5 justify-content-center">
-                  <img
-                    src="/img/illustration-features-tab-1.svg"
-                    alt="BookMarking"
-                    class="img-fluid"
-                  />
+                <div class="row">
+                  <div
+                    class="mx-auto py-auto col-8 col-lg-5 py-5 justify-content-center"
+                  >
+                    <img
+                      src="/img/illustration-features-tab-1.svg"
+                      alt="BookMarking"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="mx-auto col-8 col-lg-5 py-auto text-center">
+                    <h1 class="text-lg-start margenTop">
+                      Bookmark in on click
+                    </h1>
+                    <p class="text-start py-4 align-content-center">
+                      Organize your bookmarks however you like. Our simple
+                      drag-and-drop interface gives you complete control over
+                      how you manage your favorite sites
+                    </p>
+                    <button
+                      class="btn btn-primary justify-content-start d-none d-lg-block"
+                    >
+                      More info
+                    </button>
+                  </div>
                 </div>
-                <div class="mx-auto col-8 col-lg-5 py-auto text-center">
-                  <h1 class="text-lg-start margenTop">Bookmark in on click</h1>
-                  <p class="text-start  py-4 align-content-center">
-                    Organize your bookmarks however you like. Our simple
-                    drag-and-drop interface gives you complete control over how
-                    you manage your favorite sites
-                  </p>
-                  <button class="btn btn-primary justify-content-start d-none d-lg-block">More info</button>
-                </div>
-
               </div>
-            </div>
               <!--Speedy Searching-->
               <div
                 class="tab-pane fade"
@@ -188,25 +190,30 @@
                 role="tabpanel"
                 aria-labelledby="profile-tab"
               >
-              <div class="row justify-content-center">
-                <div class="mx-auto py-auto col-8 col-lg-5 py-5">
-                  <img
-                    src="/img/illustration-features-tab-2.svg"
-                    alt="BookMarking"
-                    class="img-fluid"
-                  />
+                <div class="row justify-content-center">
+                  <div class="mx-auto py-auto col-8 col-lg-5 py-5">
+                    <img
+                      src="/img/illustration-features-tab-2.svg"
+                      alt="BookMarking"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="mx-auto col-8 col-lg-5 py-auto text-center">
+                    <h1 class="text-lg-start text-center margenTop">
+                      Bookmark in on click
+                    </h1>
+                    <p class="text-start py-4 align-content-center">
+                      Organize your bookmarks however you like. Our simple
+                      drag-and-drop interface gives you complete control over
+                      how you manage your favorite sites
+                    </p>
+                    <button
+                      class="btn btn-primary justify-content-start d-none d-lg-block"
+                    >
+                      More info
+                    </button>
+                  </div>
                 </div>
-                <div class="mx-auto col-8 col-lg-5 py-auto text-center">
-                  <h1 class="text-lg-start text-center margenTop">Bookmark in on click</h1>
-                  <p class="text-start  py-4 align-content-center">
-                    Organize your bookmarks however you like. Our simple
-                    drag-and-drop interface gives you complete control over how
-                    you manage your favorite sites
-                  </p>
-                  <button class="btn btn-primary justify-content-start d-none d-lg-block">More info</button>
-                </div>
-
-              </div>
               </div>
               <!--Easy Sharing-->
               <div
@@ -215,31 +222,107 @@
                 role="tabpanel"
                 aria-labelledby="contact-tab"
               >
-              <div class="row text-center">
-                <div class="mx-auto py-auto col-8 col-lg-5 py-5">
-                  <img
-                    src="/img/illustration-features-tab-3.svg"
-                    alt="BookMarking"
-                    class="img-fluid"
-                  />
+                <div class="row text-center">
+                  <div class="mx-auto py-auto col-8 col-lg-5 py-5">
+                    <img
+                      src="/img/illustration-features-tab-3.svg"
+                      alt="BookMarking"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="mx-auto col-8 col-lg-5 py-auto text-center">
+                    <h1 class="text-lg-start text-center margenTop">
+                      Bookmark in on click
+                    </h1>
+                    <p class="text-start py-4 align-content-center">
+                      Organize your bookmarks however you like. Our simple
+                      drag-and-drop interface gives you complete control over
+                      how you manage your favorite sites
+                    </p>
+                    <button
+                      class="btn btn-primary justify-content-start d-none d-lg-block"
+                    >
+                      More info
+                    </button>
+                  </div>
                 </div>
-                <div class="mx-auto col-8 col-lg-5 py-auto text-center">
-                  <h1 class="text-lg-start text-center margenTop">Bookmark in on click</h1>
-                  <p class="text-start  py-4 align-content-center">
-                    Organize your bookmarks however you like. Our simple
-                    drag-and-drop interface gives you complete control over how
-                    you manage your favorite sites
-                  </p>
-                  <button class="btn btn-primary justify-content-start d-none d-lg-block">More info</button>
-                </div>
-
-              </div>
               </div>
             </div>
-          </>
+          </div>
+        </section>
+
+        <!-- Select Extension -->
+        <div class="container">
+          <div class="row py-5">
+            <h1 class="text-center mx-auto">Download the extension</h1>
+            <p class="py-2 text-center col-10 col-lg-5 mx-auto">
+              we'have got more browsers in the pipeline. Please do let us know
+              if you've got a favourite you'd like us to prioritize
+            </p>
+          </div>
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="py-1 col-8 col-lg-3 mx-auto">
+                <div class="border rounded-4 shadow p-2">
+                  <img
+                    src="/img/logo-chrome.svg"
+                    alt="Logo Chrome"
+                    class="py-4"
+                  />
+                  <h2>Add to Chrome</h2>
+                  <p class="pt-2">Minimum version 6.2</p>
+                  <img src="/img/bg-dots.svg" alt="" class="img-fluid py-3" />
+                  <div class="pb-3">
+                    <button class="btn btn-primary p-2">
+                      Add & Install Extension
+                    </button>
+                  </div>
+                </div>
+                </div>
+              
+
+                <div class="py-4 col-8 col-lg-3 mx-auto">
+                <div class="border rounded-4 shadow p-2">
+                  <img
+                    src="/img/logo-firefox.svg"
+                    alt="Logo Chrome"
+                    class="py-4"
+                  />
+                  <h2>Add to Firefox</h2>
+                  <p class="pt-2">Minimum version 5.5</p>
+                  <img src="/img/bg-dots.svg" alt="" class="img-fluid py-3" />
+                  <div class="pb-3">
+                    <button class="btn btn-primary p-2">
+                      Add & Install Extension
+                    </button>
+                  </div>
+                </div>
+                </div>
+              
+                <div class="py-5 col-8 col-lg-3 mx-auto">
+                <div class="border rounded-4 shadow p-2">
+                  <img
+                    src="/img/logo-opera.svg"
+                    alt="Logo Chrome"
+                    class="py-4"
+                  />
+                  <h2>Add to Opera</h2>
+                  <p class="pt-2">Minimum version 4.6</p>
+                  <img src="/img/bg-dots.svg" alt="" class="img-fluid py-3" />
+                    <div class="pb-3">
+                    <button class="btn btn-primary p-2">
+                      Add & Install Extension
+                    </button>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
         </section>
       </main>
       <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    </section>
   </body>
 </html>
